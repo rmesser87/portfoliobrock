@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Pages;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Contact;
 
 class ContactController extends Controller
 {
@@ -14,6 +15,6 @@ class ContactController extends Controller
      */
     public function insertPerson(){
         return response('Succesful API', 200)
-        ->header('Content-Type', 'text/plain');
+                    ->header('Content-Type', 'text/plain');
     }
 }
